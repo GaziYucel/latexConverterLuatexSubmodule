@@ -24,14 +24,10 @@ update submodule
 ### Download LuaTex binaries for your environment
 
 #### Ubuntu
-Execute the script UpdateForUbuntu.sh from Terminal. 
+Execute the script ubuntu/UpdateForUbuntu.sh. 
 - `sh ./ubuntu/UpdateForUbuntu.sh`
-This script will install `rsync` if this is not installed. Next all binaries of LuaTex will be downloaded to the directory ubuntu.
-
-#### Windows
-
-### Usage in PHP in a web application
-- //todo: add description here 
+- This script will install `rsync` if this is not installed. 
+- Next all binaries of LuaTex will be downloaded to the directory ubuntu/luatex.
 
 ## Additional info
 - http://luatex.org
