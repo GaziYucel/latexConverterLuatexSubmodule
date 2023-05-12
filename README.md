@@ -1,13 +1,8 @@
 # Description
-This submodule is a copy from http://luatex.org/download.html (linux > x86-64). 
-
-Using this submodule in another project is not recommended. Please download your version directly from http://luatex.org/download.html.
-
 [LuaTeX](http://luatex.org) is an extended version of pdfTeX using Lua as an embedded scripting language. The LuaTeX project's main objective is to provide an open and configurable variant of TeX while at the same time offering downward compatibility. From the user perspective we have pdfTeX as stable and more or less frozen 8 bit engine, XeTeX as unicode input and font aware engine using libraries for font handling, and LuaTeX as engine that is programmable and delegates as much as possible to Lua, with the objective to keep the core engine lean and mean. Each engine has its benefits and drawbacks [more details here](http://luatex.org/roadmap.html#tbp).
 
 ## Requirements
 - This submodule is meant to be used in the [Open Journal Systems](https://pkp.sfu.ca/software/ojs/download/) plugin [latexConverter](https://github.com/GaziYucel/latexConverter).
-- Linux x86-64
 
 ## Usage
 
