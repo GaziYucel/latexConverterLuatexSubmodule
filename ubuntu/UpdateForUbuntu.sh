@@ -10,7 +10,7 @@ echo "# variables"
 dateTime=$(date +%Y-%m-%d_%H-%M-%S)
 scriptUrl="//contextgarden.net/standalone/setup/first-setup.sh"
 scriptName="first-setup.sh"
-workDir="luatex"
+workDir="context"
 echo "# dateTime: $dateTime"
 echo "# scriptUrl: $scriptUrl"
 echo "# scriptName: $scriptName"
@@ -21,9 +21,9 @@ readlink -f .
 
 echo "# check if rsync is installed, install if not"
 if [ ! -x "$(which rsync)" ]; then
-  echo "# install rsync"
-	sudo apt update
-  sudo apt install rsync
+    echo "# install rsync"
+    sudo apt update
+    sudo apt install rsync
 else
     echo "# rsync already installed"
 fi
@@ -48,6 +48,15 @@ sh ./$scriptName
 
 echo "# create file $workDir/_updated_$dateTime.txt"
 echo "$dateTime" > "./_updated_$dateTime.txt"
+
+echo "# check if (sub)directories are emtpy, create empty.txt if so"
+for i in $(find . -type d -print)
+do
+    if [ ! "$(ls -A $i)" ]; then
+    echo "$i is empty"
+    touch ./$i/empty.txt
+    fi
+done
 
 echo "# change directory to parent"
 cd ..
