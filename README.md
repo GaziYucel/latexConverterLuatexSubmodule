@@ -3,6 +3,7 @@
 
 ## Requirements
 - This submodule is meant to be used in the [Open Journal Systems](https://pkp.sfu.ca/software/ojs/download/) plugin [latexConverter](https://github.com/GaziYucel/latexConverter).
+- Permission to execute shell script from within PHP (webserver user should have this permission)
 
 ## Usage
 
